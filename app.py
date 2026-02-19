@@ -22,7 +22,7 @@ def clean_text(text):
     tokens = [lemmatizer.lemmatize(w) for w in tokens if w not in stop_words and len(w) > 2]
     return ' '.join(tokens)
 
-st.title("🍲 The Roots Restaurant - AI Dish Classifier")
+st.title("🍲 The Roots Restaurant - AI Dish Classifier by Mugimba B31388")
 st.write("Enter any dish name or description → get instant category prediction")
 
 user_input = st.text_area("Dish description (example: 'Local free range chicken steamed in peanut sauce with matooke')", height=100)
